@@ -21,7 +21,8 @@ res.send('Select a collection with /collection/:collectionName')
 });
 
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*"); // allow CORS
+    res.header("Access-Control-Allow-Origin", "*"); 
+    res.header("Access-Control-Allow-Headers");    // allow CORS
     next();
   });
 
